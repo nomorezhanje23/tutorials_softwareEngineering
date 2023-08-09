@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Cheat Sheet</title>
+	</head>
+	<body>
+		<a href="blog.html">Go to blog</a>
+		<hr>
+	<!-- Heading -->
+		<h1>Heading One</h1>
+		<h2>Heading Two</h2>
+		<h3>Heading Three</h3>
+		<h4>Heading Four</h4>
+		<h5>Heading Five</h5>
+		<h6>Heading Six</h6>
+
+	<!-- Paragraphs -->
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. <strong>Ut enim ad minim veniam,</strong> <!-- How to write bold -->
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. <em>Ut enim ad minim veniam,</em> <!-- Italics -->
+	quis nostrud exercitation ullamco laboris nisi ut <a href="about.html">aliquip ex ea commodo  <!-- Link that  -->
+	consequat</a>. Duis aute irure dolor in reprehenderit in voluptate velit esse <!--link that leads to an external page goes to the same webpage-->
+	cillum dolore eu fugiat nulla pariatur. Excepteur <a href="http://google.com" target="_blank">Another page</a> sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</p>
+
+	<!--Lists-->
+		<ul>
+			<li>List Item 1</li>
+			<li>List Item 2</li>
+			<li>List Item 3</li>
+			<li>List Item 4</li>
+		</ul>
+
+	<!-- Ordered list-->
+		<ol>
+			<li>List Item 1</li>
+			<li>List Item 2</li>
+			<li>List Item 3</li>
+			<li>List Item 4</li>
+		</ol>
+
+	<!-- Tables-->
+	
+		<table> <!-- Alaways start with this tag -->
+			<thead> <!-- Rows that have headings -->
+				<tr> <!-- Table Rows: this will go in one row -->
+					<th>Name</th>
+					<th>Email</th>
+					<th>Age</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Nomore</td><!-- This is now the actual data  -->
+					<td>nomorezhanje@gmail.com</td>
+					<td>29</td>
+				</tr>
+				<tr>
+					<td>David</td><!-- This is now the actual data  -->
+					<td>davidzhanje@gmail.com</td>
+					<td>39</td>
+				</tr>
+				<tr>
+					<td>Tawanda</td><!-- This is now the actual data  -->
+					<td>TOnezhanje@gmail.com</td>
+					<td>19</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<br>
+		<hr> <!-- puts a line on the page-->
+	<!-- Forms -->
+		<form action="process.php" method="POST">
+		<div>
+			<label>First Name</label>
+			<input type="text" name="firstName" placeholder="Enter your first name"> <!-- This makes it easy to direct the client on what they can possibly do -->
+		</div>
+		<br>
+        <div>
+			<label>Last Name</label>
+			<input type="text" name="firstName">
+		</div>
+		<br>
+		<div>
+			<label>Email</label>
+			<input type="email" name="email">
+		</div>
+		<br>
+		<div>
+			<label>Message</label>
+			<textarea name="message"></textarea>
+		</div>
+		<br>
+		<div>
+			<label>Gender</label>
+			<select name="gender">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+		<br>
+		<div>
+			<label>Age:</label>
+			<input type="number" name="age" value="30">
+		</div>
+		<br>
+		<div>
+			<label>Birthday</label>
+			<input type="date" name="birtday">
+		</div>
+		<br>
+		<input type="submit" name="submit" value="submit">
+	</form>
+
+	<!-- Buttons -->
+	<button>Click Me</button>
+	<br>
+	<!-- Images -->
+	<a href="images/sampleImage.jpg">
+		<img src="images/sampleImage.jpg" alt="My sample image" width="200">
+	</a>
+
+	<!-- Quotations -->
+	<blockquote cite="http://nomorezhanje.com">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</blockquote>
+
+	<p>The <abbr title="World Wide Web">WWW</abbr> is awesome</p>
+
+	<p><cite>HTML crash course</cite> by Brad Traversy</p>
+
+	</body>
+</html>
