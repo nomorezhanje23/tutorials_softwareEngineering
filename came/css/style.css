@@ -1,3 +1,4 @@
+/* These are called global sytles*/
 body{
 	font-family: Arial, Helvetica, sans-sarif;
 	font-size: 15px;
@@ -27,11 +28,18 @@ ul{
 	padding-right: 20px;
 	color:white;
 }
+
+.dark{
+	padding :15px;
+	background: dimgrey;
+	color:white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 /* HEADER */
 
 header{
 	background-color: dimgrey;
-	color: orange;
 	padding-top:30px;
 	min-height: 70px;
 	border-bottom: orange 3px solid;
@@ -55,34 +63,45 @@ header #branding{
 }
 header #branding h1{
 margin-top:10px;  /* positions the header in the middle */
+color:white;
 }
+header #branding h1 .highlight{
+	color:orange;
+}
+
+
 header nav{
 	float: right;
 	margin-top:10px;
 }
-/* struggled here vid 32.00 min to 40 min */
+/* struggled here vid 32.00 min to 40 min 
 header .current, header .highlight a{
-	color: orange;
+	font-weight: bold;
+}*/
+
+header .current a{
+	color:orange;
 	font-weight: bold;
 }
 
 header a:hover{
-	color: orange;
+	color: orangered ;
 	font-weight: bold;
 }
 
 /* Showcase */
 #showcase{
 	min-height: 400px; /* this sets the image to be responsive */
-	background: url('../images/large_main.webp') no-repeat 0;
+	background: url('../images/apple.jpg') no-repeat 0;
 	text-align: center;
 	color: black;
 }
 
 #showcase h1{
 	margin-top: 100px;
-	font-size: 55px;
+	font-size: 30px;
 	margin-bottom: 10px;
+	padding:30px;
 	}
 #showcase p{
 	font-size: 20px; 
@@ -122,4 +141,77 @@ width: 250px;
 #boxes .box{
 	float:left;
 	width:30%;
+	padding: 10px;
+	text-align: center;
+}
+
+#boxes .box img{
+	width:100px;
+}
+ /* side bar */
+ aside#sidebar{ /*when it is just the id and the symantic tab make it a one word*/
+ 	float:right;
+ 	width:30%;
+ 	margin-top: 10px;
+ }
+
+ aside#sidebar .quote input, aside#sidebar .quote textarea{
+ 	width:90%;
+ 	padding:5px;
+ }
+aside#sidebar .quote button{
+	margin-top: 5px;
+}
+ /*main-col*/
+  article#main-col{
+  	float:left;
+  	width:65%;
+  }
+
+/* services */
+
+ul#services li{
+list-style: none;
+padding:20px;
+border: orange 1px solid;
+margin-bottom: 5px;
+background: lightgrey;
+}
+
+footer{
+	padding:20px;
+	margin-top: 20px;
+	color:white;
+	background-color: dimgrey;
+	text-align: center;
+}
+
+/*media Queries*/
+
+@media(max-width:768px){
+	header #branding, header nav, header nav li, #newsletter h1, #newsletter form, #boxes .box, article#main-col, aside#sidebar
+	{
+		float:none;
+		text-align: center;
+		width: 100%;
+	}
+
+	header{
+		padding-bottom: 20px;
+	}
+	#showcase h1{
+		margin-top:40px;
+	}
+
+	#newsletter button, .quote button {
+		display: block;
+		width: 100%;
+	}
+	#newsletter form input[type="email"], .quote input, .quote textarea {
+		width:100%;
+		margin-bottom: 5px;
+	}
+	
+
+
 }
