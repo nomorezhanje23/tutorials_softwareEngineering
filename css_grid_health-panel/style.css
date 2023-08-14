@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=PT+Sans+Narrow&family=Sue+Ellen+Francisco&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0
+}
+
+body{
+    background: #333;
+    color:#fff;
+    font-family: 'Caveat', sans-serif;
+}
+ 
+h2{
+    font-size: 45px;
+    font-weight: 300;
+    margin:10px;
+}
+
+h2 span{
+    font-size: 30px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:10px;
+}
+/* setting the each div in the container to the same size and features */
+.container > div {
+    cursor: pointer; /*this makes the cursor to change to a hand when its moved over the divs the hand */
+    height: 210px;
+    background-size: cover;
+    /* this property will make the image span over the whole container*/ 
+    background-attachment: fixed;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+    transition: all .5s ease-in; /*This makes the images to be cool and responsive */
+}
+
+.container > div:hover{
+    opacity: 0.7;  /*dims the color*/
+    transform: scale(0.98); /*this makes the pics to become a bit smaller*/
+}
+
+
+/*if there are no specific classes in the divs, you use the :nth-of-type() function */
+.container > div:nth-of-type(1)
+{
+    grid-column: 1/3; 
+}
+/* remember to count all the boxes */  
+.container > div:nth-of-type(6)
+{
+    grid-column: 3/5;
+}
+
+.container > div:nth-of-type(9)
+{
+    grid-column: 3/5;
+}
+
+.container > div:nth-of-type(10)
+{
+    grid-column: 1/3;
+}
+
+/* setting the background to the size of the picture but it will be too big to be seen */
+.bg1{
+    background: url(https://images.unsplash.com/photo-1535914254981-b5012eebbd15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80);
+}
+
+.bg2{
+    background: url(https://images.unsplash.com/photo-1593476366803-cff071151082?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80);
+    color: black;
+}
