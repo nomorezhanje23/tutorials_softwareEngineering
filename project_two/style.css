@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.welcome{
+    background-image: url("img/timothy-eberly-XVE2eMZGrhk-unsplash.webp");
+    background-position: center;
+    background-size: cover;
+    
+}
+.card{
+    border-radius: 20px;
+    max-height: 100hv;
+}
+
