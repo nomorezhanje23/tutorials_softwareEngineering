@@ -11,9 +11,9 @@
 </head>
 <body>
     <!--Navigation-->
-    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
         <div class="container">
-            <a href="#" class="navbar-brand text-dark"><strong>Bellville South Africa Stake</strong></a>
+            <a href="#" class="navbar-brand text-dark"><strong>Milnerton Ward</strong></a>
 
             <button class="navbar-toggler"
             type="button"
@@ -27,19 +27,19 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">Questions</a>
                     </li>
                     <li class="nav-item">
                         <a href="#organizations" class="nav-link">Organizations</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#meetings" class="nav-link">Meetings</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#resources" class="nav-link">Resources</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#activities" class="nav-link">Activities</a>
+                        <a href="#leaders" class="nav-link">Leaders</a>
                     </li>
                 </ul>
             </div>
@@ -49,7 +49,7 @@
 
     <section class="welcome bg-secondary text-dark p-5 text-center">
         <div class="container">
-            <div class=" text-sm-end">
+            <div class=" text-sm-end p-5">
                 <div>
                     <strong><h1>MINERTON WARD</h1>
                     <h3>OF THE CHURCH OF JESUS CHRIST OF LATTER-DAY SAINTS</h3></strong>
@@ -68,6 +68,8 @@
           </div>
     </section>
 
+    
+
     <!--What we believe-->
 
     <section class="bg-light p-5">
@@ -76,6 +78,7 @@
                 <div class="col-md">
                     <div class="card bg-warning text-dark">
                         <h3 class="card-title mb-3 pt-3">Learn About Jesus</h3>
+                        <h1><i class="bi bi-heart"></i></h1>
                         <p class="card-text text-align-center justify-content-between p-3 mb-1">
                             Jesus Christ is the Son of God—your Savior and Redeemer, sent to save us all. Because of Him, you can find joy in knowing you can live with God and your loved ones for eternity.
                         </p>
@@ -85,6 +88,7 @@
                 <div class="col-md">
                     <div class="card bg-warning text-dark">
                         <h3 class="card-title mb-2 pt-3">Find Meaning in Life</h3>
+                        <h1><i class="bi bi-hourglass-split"></i></h1>
                         <p class="card-text text-align-center justify-content-between p-2 mb-1">
                             Have you ever wondered why you’re here? Why God created this earth and placed you on it? If you feel deep in your soul that there must be some greater purpose to your life than simply existing.
                         </p>
@@ -94,6 +98,7 @@
                 <div class="col-md">
                     <div class="card bg-warning text-dark">
                         <h3 class="card-title mb-3 pt-3">Life's Challenges</h3>
+                        <h1><i class="bi bi-signpost-split"></i></h1>
                         <p class="card-text text-align-center justify-content-between p-3 mb-1">
                             No one has to go through life’s challenges alone. Jesus Christ understands perfectly what you’re going through and will support you, because he love you.
                         </p>
@@ -120,9 +125,137 @@
         </div>
     </section>
 
+        <!-- Question Accordion-->
+
+        <section id="questions" class="p-5 bg-light" >
+            <div class="container">
+                <h2 class="text-center mb-4 ">Frequently Asked Questions</h2>
+                <div class="accordion accordion-flush" id="questions">
+                    <!--ITEM 1-->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                         type="button" 
+                         data-bs-toggle="collapse" 
+                         data-bs-target="#question-one">
+                         Are members of The Church of Jesus Christ of Latter-day Saints Christian?
+                        </button>
+                      </h2>
+                      <div id="question-one"
+                       class="accordion-collapse collapse"
+                       data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            Yes! As members of The Church of Jesus Christ of Latter-day Saints, we believe Jesus Christ is the Son of God and the Savior of the World. He loves us all more than we can imagine. We consider ourselves devoted followers of Jesus. While some of our beliefs are distinct, we believe that through His life, ministry, sacrifice, and resurrection, Jesus Christ saves us from sin, suffering, and death.
+                        </div>
+                    </div>
+                    </div>
+    
+                    <!--ITEM 2-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed"
+                           type="button" 
+                           data-bs-toggle="collapse" 
+                           data-bs-target="#question-two">
+                           What are Church services like?
+                          </button>
+                        </h2>
+                        <div id="question-two"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#questions">
+                          <div class="accordion-body">
+                            Church service times vary from congregation to congregation. However, you can always count on one main worship service for everyone, followed by classes for children, youth, and adults.
+                            <br>
+                            The service for everyone is called “sacrament meeting.” This meeting consists of songs, prayers, and sermons (or “talks”) given by different members of the congregation every week. But the most important part of the meeting is when we take the sacrament (which is similar to communion) to remember the Savior.
+                          </div>
+                      </div>
+                      </div>
+                    <!-- ITEM 3-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed"
+                           type="button" 
+                           data-bs-toggle="collapse" 
+                           data-bs-target="#question-three">
+                           What is the Book of Mormon?
+                          </button>
+                        </h2>
+                        <div id="question-three"
+                         class="accordion-collapse collapse"
+                         data-bs-parent="#questions">
+                          <div class="accordion-body">
+                            The Book of Mormon is a book of inspired scripture that teaches us about God and Jesus Christ. It helps us receive direction for our personal lives and can help us feel closer to Jesus Christ. Where does the name come from? Hundreds of years ago, an ancient prophet named Mormon compiled a record of his people. They faced a lot of the same challenges that we do. And just like us, they found strength when they turned to Jesus Christ.
+                            <br>
+                            The Book of Mormon stands alongside the Bible as another testament of Jesus Christ and His divine mission as the Savior and Redeemer of the world. Together, the Bible and the Book of Mormon provide more understanding of God’s great love for all of us and can help us come closer to Him. 
+                          </div>
+                      </div>
+                  </div>
+                  <!--ITEM 4--> 
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed"
+                       type="button" 
+                       data-bs-toggle="collapse" 
+                       data-bs-target="#question-four">
+                       Do we believe in the Bible?
+                      </button>
+                    </h2>
+                    <div id="question-four"
+                     class="accordion-collapse collapse"
+                     data-bs-parent="#questions">
+                      <div class="accordion-body">
+                        Yes. The Bible is the word of God, a sacred volume of scripture, and following its teachings brings joy to our lives. Along with the Bible, we also find inspiration in other books of scripture unique to The Church of Jesus Christ of Latter-day Saints. They all work together to teach us important truths about God and Jesus Christ.
+                      </div>
+                     </div>
+                    </div>
+        <!--ITMEM 5-->
+                    <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed"
+                         type="button" 
+                         data-bs-toggle="collapse" 
+                         data-bs-target="#question-five">
+                          Do we have an official website?
+                        </button>
+                      </h2>
+                      <div id="question-five"
+                       class="accordion-collapse collapse"
+                       data-bs-parent="#questions">
+                        <div class="accordion-body">
+                            Yes! We do have an official church website. To learn more about the Church of Jesus Christ of Latter-day Saints, please visit <a href="https://new.churchofjesuschrist.org/?lang=eng" target="_blank">lds.org</a> for more information.
+                        </div>
+                       </div>
+                      </div>
+            </div>
+            </div>
+        </section>
+
+    <!-- Organizations-->
+
+        <section class="p-4 bg-light" id="organizations">
+            <div class="container">
+                <h2 class="text-center mb-3">Organizations</h2>
+                <div class="row text-center">
+                    <div class="col-md card bg-warning text-dark m-2"><a href="#">Elder's Quorum</a></div>
+                    <div class="col-md card bg-warning text-dark m-2"><a href="#">Relief Society</a></div>
+                    <div class="col-md card bg-warning text-dark m-2"><a href="#">Primary</a></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md card bg-warning text-dark m-2"><a href="#">Youth</a></div>
+                    <div class="col-md card bg-warning text-dark m-2"><a href="#">Upcoming Events</a></div>
+                    <div class="col-md card bg-warning text-dark m-2"><a href="#">Sunday School</a></div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md card bg-warning text-dark m-2"><a href="#">YSA</a></div>
+                    <div class="col-md card bg-warning text-dark m-2"><a href="#">Missionary Work</a></div>
+                    <div class="col-md card bg-warning text-dark m-2"><a href="#">Ward Newsletter</a></div>
+                </div>
+            </div>
+        </section>
+
       <!-- leaders --> 
 
-      <section id="instructors" class="p-5 bg-light">
+      <section id="leaders" class="p-5 bg-light">
         <div class="container">
             <h2 class="text-center text-dark">Our Leaders</h2>
             <p class="lead text-center text-dark mb-5"><cite>"When ye are in the service of your fellow beings ye are only in the service of your God"</cite> Mosiah 2vs17</p>
@@ -131,7 +264,7 @@
                     <div class="card bg-warning">
                         <div class="card-body text-center">
                             <img src="img/bishop.webp" class="rounded-circle mb-3"alt="">
-                            <h3 class="card-title mb-3">Taonatose Jiri</h3>
+                            <h3 class="card-title mb-3">Taona Jiri</h3>
                             <h4 class="card-title mb-3">Bishop</h4>
                             <p class="card-text"></p>
                             <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
@@ -179,7 +312,111 @@
         </div>
     </section>
 
+    <!-- disclaimer -->
 
+    <section class="bg-warning text-dark p-5 text-center justify-content-between">
+        <div class="container">
+            <div class="d-sm-flex ">
+                <div class="text-sm-start">
+                    <h2>About This Website</h2>
+                    <p class="lead my-4">These online resources including all of the content, images, or other materials are not sponsored or endorsed by the Church of Jesus Christ of Latter-day Saints. They do not officially represent the Church in any way and are not an official, Church-sponsored product.</p>
+                    <br>
+                    <p class=" my-4">
+                        Milnerton Ward <br>
+                        Cnr Tijgerhof & Daniel Roads<br>
+                        Milnerton, Cape Town, 7441 <br>
+                    </p>
+                    <hr>
+                    <p class="my-4">
+                        Bishop: Taona Jiri <br>
+                        Elder's Quorum President: Tapiwa Timba <br>
+                        Relief Society President: Dorothea Gray <br>
+                        Ward Executive Secretary: Taka Tawachera<br>
+                        Ward Clerk: Roy Tyler
+
+                    </p>
+                </div>
+                <div class="text-sm-end">
+                    <h2>Meet the missionaries</h2>
+                    <p class="lead my-4">Deepen your relationship with God and learn His plan for you as you meet with missionaries from The Church of Jesus Christ of Latter-day Saints. We’ll pray, read, and discuss the teachings of Jesus Christ with you.</p>
+                    <button 
+                    class="btn btn-dark btn-lg" 
+                    data-bs-toggle="modal" 
+                    data-bs-target="#enroll"
+                    >Request a Visit</button>
+                    <br>
+                    <p class="text-sm-end mt-5"><em>Please visit our <a href="#">stake website</a></em></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+       <!--FOOTER-->
+       <footer class="p-3 bg-warning text-dark text-center position-relative">
+        <div class="container">
+            <p class="lead"><strong>Copyright &copy; 2023 Milnerton Ward</strong></p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-3">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+<div
+class="modal fade"
+id="enroll"
+tabindex="-1"
+aria-labelledby="enrollLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="enrollLabel">We are happy to meet with you!</h5>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="modal-body">
+      <p class="lead">Fill out this form and the missionaries will get back to you:</p>
+      <form>
+        <div class="mb-3">
+          <label for="first-name" class="col-form-label">
+            First Name:
+          </label>
+          <input type="text" class="form-control" id="first-name"/>
+        </div>
+        <div class="mb-3">
+          <label for="last-name" class="col-form-label">Last Name:</label>
+          <input type="text" class="form-control" id="last-name" />
+        </div>
+        <div class="mb-3">
+          <label for="address" class="col-form-label">Address:</label>
+          <input type="address" class="form-control" id="address" />
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="col-form-label">Phone:</label>
+          <input type="tel" class="form-control" id="phone" />
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-bs-dismiss="modal"
+      >
+        Close
+      </button>
+      <button type="button" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</div>
+</div>
 
 
 
